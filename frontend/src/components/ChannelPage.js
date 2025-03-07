@@ -18,6 +18,7 @@ const getTodayTime = () => {
 const ChannelPage = ({ basePath }) => {
     const { channel } = useParams();
     const [startDate, setStartDate] = useState(getTodayDate());
+    console.log(startDate);
     const [startTime, setStartTime] = useState("0000");
     const [endDate, setEndDate] = useState(getTodayDate());
     const [endTime, setEndTime] = useState(getTodayTime());
